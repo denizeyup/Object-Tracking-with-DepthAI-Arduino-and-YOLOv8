@@ -18,7 +18,7 @@ def start_depthaiCam():
 
 def start_ros_node():
     terminal_command = "cd catkin_ws"
-    terminal_command_0 = "rosrun kangal talker"
+    terminal_command_0 = "rosrun object_tracking main.py"
     terminal_command_1 = "source ./devel/setup.bash"
     subprocess.Popen(['gnome-terminal', '--', 'bash', '-c', terminal_command + '; exec bash'])
     subprocess.Popen(['gnome-terminal', '--', 'bash', '-c', terminal_command_0 + '; exec bash'])
